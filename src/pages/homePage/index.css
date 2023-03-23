@@ -1,0 +1,83 @@
+.sidebarBtns {
+  min-height: 100px;
+}
+.container {
+  min-height: 80vh;
+  overflow: hidden;
+}
+.modal-content{
+  
+  height: 90vh;
+  background-color: aqua;
+}
+.add-note-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 40;
+  border: 2px solid white;
+  background: rgb(250, 167, 14);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 1px 1px white 5px;
+  animation-name: wrapper-note;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+
+}
+@keyframes wrapper-note {
+    100%{
+        box-shadow: 2px -2px 20px 5px rgb(255, 216, 19)  ;
+    }
+    
+}
+.sticky-top {
+  top: 20px;
+}
+.open-sidebar {
+  display:none ;
+  
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .open-sidebar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+    
+  }
+  .svg-toggler2{
+      transform: rotate(90deg);
+  }
+  
+  aside{
+    width: 200px;
+    position: absolute;
+    top: 25%;
+    
+    right: -300px;
+  }
+  .sideBarOn{
+      animation-name: sidebarOn;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      
+  }
+  @keyframes sidebarOn {
+    100%{
+        transform: translateX(-300px);
+        transition: all;
+    }
+      
+  }
+  
+  /*  */
+}

@@ -1,0 +1,8 @@
+footer{
+    min-height: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    background-color: orange;
+}

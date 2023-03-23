@@ -1,0 +1,25 @@
+
+
+.category{
+    border: orange solid 2px;
+    background: rgba(157, 157, 157, 0.467);
+    
+    width: 80%;
+    height: 70px;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .category{
+       width: 80%;
+        height: 55px;      
+    }
+    
+}
+@media only screen and (max-width: 1200px) {
+    .category{
+       width: 80%;
+       height: 60px;   
+    }
+    
+}
